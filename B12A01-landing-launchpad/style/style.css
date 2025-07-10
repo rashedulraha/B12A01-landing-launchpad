@@ -19,6 +19,10 @@
   --secoundy-color: #252432;
   --See-Action-content-p: grey;
   --secound-sectio-bgColor: #e5e7ff;
+  --border-color: grey;
+  --background-color: #ffff;
+  --text-h4-color: #1e1e1e;
+  --f5color: rgb(119, 115, 115);
 }
 
 .main-btn {
@@ -140,7 +144,6 @@ header {
   align-content: center;
   justify-content: center;
   gap: 158px;
-  margin-bottom: 137px;
 }
 .productive-user h3 {
   font-family: "Inter", sans-serif;
@@ -149,4 +152,60 @@ header {
 }
 .productive-user p {
   font-size: 20px;
+}
+
+/*! Start third Section */
+.third-section {
+  margin-top: 137px;
+}
+
+.users-say h2 {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--secoundy-color);
+}
+.user-say-detels {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+.Designers {
+  padding: 24px;
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+}
+
+.Designers h4 {
+  margin-bottom: 8px;
+  font-size: 25px;
+  color: var(--text-h4-color);
+}
+
+.Designers p {
+  color: var(--text-h4-color);
+}
+
+.Designers figure {
+  margin-bottom: 15px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 24px;
+}
+.reviewer .img {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.Reviewer-name h5 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: var(--f5color);
 }
