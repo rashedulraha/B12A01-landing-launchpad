@@ -16,7 +16,9 @@
   --background-color: #f5f8ff;
   --primary-color: #4e47ff;
   --See-Action-content-h2: #252432;
+  --secoundy-color: #252432;
   --See-Action-content-p: grey;
+  --secound-sectio-bgColor: #e5e7ff;
 }
 
 .main-btn {
@@ -82,9 +84,6 @@ header {
 
 /* ! Start Main section */
 
-main {
-  height: 1000px;
-}
 .first-section {
   margin: 100px auto auto;
   display: flex;
@@ -115,4 +114,39 @@ main {
 .See-Action-Banner figure img {
   width: 100%;
   object-fit: cover;
+}
+
+/*  ! Secound section  style */
+
+.Secound-section {
+  margin: 100px auto auto;
+  padding: 50px 80px 50px 80px;
+  background-color: var(--secound-sectio-bgColor);
+  border-radius: 24px;
+}
+
+.Joined h4 {
+  font-size: 38px;
+  font-weight: bold;
+  color: var(--secoundy-color);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/*  ! start secound section  */
+
+.productive-user {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 158px;
+  margin-bottom: 137px;
+}
+.productive-user h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 80px;
+  color: var(--primary-color);
+}
+.productive-user p {
+  font-size: 20px;
 }
