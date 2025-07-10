@@ -13,6 +13,7 @@
 
 :root {
   --primary-text-color: #ffffff;
+  --body-color: #dee3f0;
   --background-color: #f5f8ff;
   --primary-color: #4e47ff;
   --See-Action-content-h2: #252432;
@@ -20,7 +21,7 @@
   --See-Action-content-p: grey;
   --secound-sectio-bgColor: #e5e7ff;
   --border-color: grey;
-  --background-color: #ffff;
+  --background-color-white: #ffff;
   --text-h4-color: #1e1e1e;
   --f5color: rgb(119, 115, 115);
   --p-color: rgb(119, 115, 115);
@@ -39,7 +40,7 @@
 body {
   height: 100vh;
   width: 100%;
-  background-color: var(background-color);
+  background-color: var(--body-color);
 }
 
 .main-container {
@@ -174,8 +175,8 @@ header {
 .Designers {
   padding: 24px;
   border-radius: 14px;
-  border: 1px solid var(--border-color);
-  background-color: var(--background-color);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: var(--background-color-white);
 }
 
 .Designers h4 {
@@ -215,7 +216,7 @@ header {
 
 .fourth-section {
   padding: 71px 150px 71px 150px;
-  background-color: var(--background-color);
+  background-color: var(--background-color-white);
 }
 
 .Ready-to-focus-better-content {
@@ -242,4 +243,45 @@ header {
   width: 840px;
   overflow: hidden;
   border-radius: 48px;
+}
+
+/*  ! Start Fifth section  */
+
+.fifth-section {
+  margin: 100px 0 137px 0;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+.contact-content h3 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+input {
+  padding: 20px 32px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 20px;
+  background-color: var(--background-color-white);
+  color: var(--secoundy-color);
+}
+textarea {
+  padding: 20px 32px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+  font-size: 20px;
+  background-color: var(--background-color-white);
+  color: var(--secoundy-color);
 }
