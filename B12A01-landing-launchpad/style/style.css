@@ -24,7 +24,7 @@
   --background-color-white: #ffff;
   --text-h4-color: #1e1e1e;
   --f5color: rgb(119, 115, 115);
-  --p-color: rgb(119, 115, 115);
+  --p-color: #8987a1;
 }
 
 .main-btn {
@@ -217,6 +217,7 @@ header {
 .fourth-section {
   padding: 71px 150px 71px 150px;
   background-color: var(--background-color-white);
+  border-radius: 14px;
 }
 
 .Ready-to-focus-better-content {
@@ -284,4 +285,46 @@ textarea {
   font-size: 20px;
   background-color: var(--background-color-white);
   color: var(--secoundy-color);
+}
+.form-btn {
+  width: 100%;
+  margin-top: 19px;
+}
+
+.sixth-section {
+  margin: 104px auto 200px;
+  background-color: var(--background-color-white);
+}
+
+.footer-content {
+  width: 80%;
+  max-width: 631px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.footer-content h2 {
+  font-size: 130px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.footer-content p {
+  color: var(--p-color);
+  text-align: center;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.footer-content li a {
+  color: var(--p-color);
 }
