@@ -25,6 +25,7 @@
   --text-h4-color: #1e1e1e;
   --f5color: rgb(119, 115, 115);
   --p-color: #8987a1;
+  --btn-hover: #3d38cc;
 }
 
 .main-btn {
@@ -35,6 +36,24 @@
   background-color: var(--primary-color);
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.main-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(78, 71, 255, 0.3);
+}
+
+.main-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(78, 71, 255, 0.2);
 }
 
 body {
@@ -88,28 +107,29 @@ header {
   margin-bottom: 37px;
 }
 
-/* ! Start Main section */
+/* ! Start  First section */
 
 .first-section {
-  margin: 100px auto auto;
+  width: 80%;
+  margin: 100px auto 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: auto;
+  align-items: center;
 }
 
 .See-Action-content h2 {
   font-size: 42px;
   font-weight: bold;
-  color: var(--See-Action-content-h2);
+  color: var(--text-dark);
   margin-bottom: 23px;
 }
+
 .See-Action-content p {
-  font-size: 24px;
-  color: var(--See-Action-content-p);
+  font-size: 20px;
+  color: var(--text-grey);
   line-height: 30px;
   margin-bottom: 23px;
-  opacity: 50;
+  opacity: 0.5;
 }
 
 .See-Action-Banner {
@@ -117,8 +137,9 @@ header {
   border-radius: 48px;
 }
 
-.See-Action-Banner figure img {
+.See-Action-Banner img {
   width: 100%;
+  display: block;
   object-fit: cover;
 }
 
@@ -186,7 +207,7 @@ header {
 }
 
 .Designers p {
-  color: var(--text-h4-color);
+  color: var(--p-color);
 }
 
 .Designers figure {
@@ -265,8 +286,14 @@ form {
   flex-direction: column;
   gap: 19px;
 }
-
+.email,
+.name,
+.Message {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 input {
+  margin-top: 10px;
   padding: 20px 32px;
   width: 100%;
   border: none;
@@ -277,6 +304,7 @@ input {
   color: var(--secoundy-color);
 }
 textarea {
+  margin-top: 10px;
   padding: 20px 32px;
   width: 100%;
   border-radius: 10px;
