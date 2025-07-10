@@ -23,6 +23,7 @@
   --background-color: #ffff;
   --text-h4-color: #1e1e1e;
   --f5color: rgb(119, 115, 115);
+  --p-color: rgb(119, 115, 115);
 }
 
 .main-btn {
@@ -156,7 +157,7 @@ header {
 
 /*! Start third Section */
 .third-section {
-  margin-top: 137px;
+  margin: 137px 0 137px 0;
 }
 
 .users-say h2 {
@@ -208,4 +209,37 @@ header {
   font-size: 20px;
   text-transform: capitalize;
   color: var(--f5color);
+}
+
+/*!  start fourth section */
+
+.fourth-section {
+  padding: 71px 150px 71px 150px;
+  background-color: var(--background-color);
+}
+
+.Ready-to-focus-better-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.Ready-to-focus-better-content h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--See-Action-content-h2);
+  margin-bottom: 20px;
+}
+
+.Ready-to-focus-better-content p {
+  font-size: 20px;
+  color: var(--p-color);
+  margin-bottom: 20px;
+}
+
+.Ready-to-focus-better-img {
+  height: 360px;
+  width: 840px;
+  overflow: hidden;
+  border-radius: 48px;
 }
